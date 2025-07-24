@@ -1,6 +1,9 @@
 *** Settings ***
 Library    SeleniumLibrary
 
+*** Variables ***
+${TEMP_PROFILE}    ${CURDIR}/temp_chrome_profile
+
 *** Keywords ***
 Abrir Navegador
   [Arguments]  ${navegador}
