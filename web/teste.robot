@@ -2,12 +2,12 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${TEMP_PROFILE}    ${CURDIR}/temp_chrome_profile
+${TEMP_PROFILE}    --headless
 
 *** Keywords ***
 Abrir Navegador
   [Arguments]  ${navegador}
-    Open Browser  https://bugbank.netlify.app/  ${navegador}  options=add_argument(--headless)
+    Open Browser  https://bugbank.netlify.app/  ${navegador}  options=add_argument("--disable-popup-blocking"); add_argument("--ignore-certificate-errors")
     Sleep    5s
 
 *** Test Cases ***

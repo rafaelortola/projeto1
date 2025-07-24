@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-24T09:13:24.621402" rpa="false" schemaversion="5">
+<suite id="s1" name="Teste" source="c:\Users\Pichau\Documents\robotframework\projeto1\web\teste.robot">
+<test id="s1-t1" name="Abertura do navegador firefox" line="17">
+<kw name="Abrir Navegador">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-24T09:13:24.790497" level="INFO">Opening browser 'firefox' to base url 'https://bugbank.netlify.app/'.</msg>
+<arg>https://bugbank.netlify.app/</arg>
+<arg>${navegador}</arg>
+<arg>options=add_argument("--disable-popup-blocking"); add_argument("--ignore-certificate-errors")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-24T09:13:24.790221" elapsed="12.199606"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-24T09:13:41.991218" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-24T09:13:36.990252" elapsed="5.001282"/>
+</kw>
+<arg>firefox</arg>
+<status status="PASS" start="2025-07-24T09:13:24.789654" elapsed="17.202030"/>
+</kw>
+<status status="PASS" start="2025-07-24T09:13:24.788994" elapsed="17.203384"/>
+</test>
+<status status="PASS" start="2025-07-24T09:13:24.624516" elapsed="17.370752"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Teste" id="s1" pass="1" fail="0" skip="0">Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
